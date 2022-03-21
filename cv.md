@@ -1,4 +1,4 @@
-# [rsschool-cv](www.google.com)
+# [rsschool-cv](https://GrigorySadovskiyxyz.github.io/rsschool-cv/cv)
 
 # Grigory Sadovskiy
 
@@ -10,8 +10,11 @@
 - **E-mail:** sadovskiy.grigory@yandex.ru
 - **Telegram:** @brgrigo
 - **GitHub:** [GrigorySadovskiyxyz](https://github.com/GrigorySadovskiyxyz)
+- **Discord:** brgrigo#5394
 
 ## About Me
+
+I have a willingness to increase my competencies in the field of Frontend Development and MERN stack as well as in digitalization of the companies in industrial sector. Happy to solve complex tasks and ready for the new challenges.
 
 ## Tech skills:
 
@@ -33,11 +36,9 @@
 - Vim (basics)
 - Figma
 
-## Learning
+## Miscellaneous
 
 Among all skills I want to **highlight:** googling information in obscure situations, touch typing (~100-110 WPM), critical thinking, code quality optimization, asking right questions and solving thing on my own independetly.
-
-I have a willingness to increase my competencies in the field of Frontend Development and MERN stack as well as in digitalization of the companies in industrial sector. Happy to solve complex tasks and ready for the new challenges.
 
 ## Code Examples
 
@@ -63,7 +64,7 @@ const payments = [
 ];
 ```
 
-There is an array with information about payments: where **_createdAt_** - time of payment in timestamp format, **_sum_** - amount of payment.
+where **_createdAt_** - time of payment in timestamp format, **_sum_** - amount of payment.
 
 You need to write a function which will receive an array of payments and return the three most profitable days in descending order in the form:
 **_"yyyyy-mm-dd": N_**
