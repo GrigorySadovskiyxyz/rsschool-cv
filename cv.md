@@ -118,9 +118,10 @@ getThreeMostProfitableDays(payments)
 
 ## Education
 
+- **Bauman Moscow State Technical University, BMSTU.** PhD Programme in «Control of technical systems» (2023)
+
 - **Lappeenranta-Lahti University of Technology, LUT.**
-  Master's Programme in Global Management of Innovation and Technology 2019
-- **Bauman Moscow State Technical University, BMSTU.** PhD Programme in 
+  Master's Programme in «Global Management of Innovation and Technology» (2019)
 
 - Courses:
 
