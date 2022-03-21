@@ -14,7 +14,7 @@
 
 ## About Me
 
-I have a willingness to increase my competencies in the field of Frontend Development and MERN stack as well as in digitalization of the companies in industrial sector. Happy to solve complex tasks and ready for the new challenges.
+I have a willingness to increase my competencies in the field of Frontend Development and learn MERN stack as well as work on digitalization of the companies in industrial sector. Happy to solve complex tasks and ready for the new challenges.
 
 ## Tech skills:
 
@@ -114,15 +114,18 @@ function getThreeMostProfitableDays(data) {
     return result.slice(0, 3);
 }
 
-getThreeMostProfitableDays(payments)
+console.log(getThreeMostProfitableDays(payments));
 ```
 
 ## Education
 
-- **Bauman Moscow State Technical University, BMSTU.** PhD Programme in «Control of technical systems» (2023)
+- **Bauman Moscow State Technical University, BMSTU.**
+
+  - PhD Programme in «Control of technical systems» (2023)
 
 - **Lappeenranta-Lahti University of Technology, LUT.**
-  Master's Programme in «Global Management of Innovation and Technology» (2019)
+
+  - Master's Programme in «Global Management of Innovation and Technology» (2019)
 
 - Courses:
 
