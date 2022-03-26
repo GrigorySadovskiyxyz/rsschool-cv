@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: disc;
+  line-height: 1.3;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  justify-content: space-between;
+  width: 700px;
+  height: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  font-family: 'Segoe UI Light', sans-serif;
+}
+
+.line {
+  width: 700px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 0px 20px 0px;
+}
+
+img {
+  height: 44px;
+  width: 44px;
+  display: block;
+}
+
+header {
+  padding-bottom: 34px;
+}
+
+main {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 700px;
+  height: 60px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  gap: 12px;
+  align-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  gap: 12px;
+  justify-content: start;
+}
+
+h3 {
+  padding-top: 20px;
+  display: block;
+}
+
+h4 {
+  display: inline;
+}
+
+a,
+p.date {
+  color: grey;
+}
+
+p.description {
+  padding-top: 6px;
+}
