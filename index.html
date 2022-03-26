@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+  <title>rsschool-cv CV Grigory Sadovskiy</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="container">
+        <div>
+          <h2>Grigory Sadovskiy</h2>
+          <h4>Junior Frontend Developer</h4>
+        </div>
+        <div>
+          <p>+7 9651446707</p>
+          <p>sadovskiy.grigory@yandex.ru</p>
+          <p>Moscow, Russia</p>
+          <p><a href="https://grigorysadovskiyxyz.github.io/rsschool-cv/cv">rsschool-cv</a></p>
+        </div>
+      </div>
+    </header>
+    <div class="line"></div>
+    <main>
+      <h3>Education</h3>
+      <div class="item">
+        <div>
+          <img src="images/bmstu.svg" alt="BMSTU logo" />
+        </div>
+        <div>
+          <h4>Bauman University &bull; </h4>
+          <h4> PhD in Control of technical system</h4>
+          <p class="date">September 2019 — July 2023</p>
+          <p class="description">
+          </p>
+        </div>
+
+      </div>
+      <div class="item">
+        <div>
+          <img src="images/lut.svg" alt="LUT logo" />
+        </div>
+        <div>
+          <h4>Lappeenranta-Lahti University of Technology &bull; </h4>
+          <h4>MSc in Innovation and Technology</h4>
+          <p class="date">August 2018 — December 2019</p>
+          <p class="description">
+          </p>
+        </div>
+
+      </div>
+      <div class="line"></div>
+      <h3>Contact information</h3>
+      <div class="logo">
+        <div><img src="images/github.svg" alt="Github" /></div>
+        <div>
+          <h4>Github</h4>
+          <p><u><a href="https://github.com/grigorysadovskiyxyz">/grigorysadovskiyxyz</a></u></p>
+        </div>
+        <div><img src="images/discord.svg" alt="Discord" /></div>
+        <div>
+          <h4>Discord</h4>
+          <p><u><a href="https://discordapp.com/users/691928410011861092/">/brgrigo#5394</a></u></p>
+        </div>
+        <div><img src="images/telegram.svg" alt="Telegram" /></div>
+        <div>
+          <h4>Telegram</h4>
+          <p><u><a href="https://t.me/brgrigo">/@brgrigo</a></u></p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <h3>About me</h3>
+      <div class="item">
+        <p>Self-taught developer. Learned from FreeFreeCodeCamp, SICP JS, Hexlet, The Odin Project, Udemy. Have
+          willingness to increase my competencies in the field of Frontend Development and learn MERN stack as
+          well as work on digitalization of the companies in industrial sector. Happy to solve complex tasks and ready
+          for the new challenges.
+        </p>
+      </div>
+      <div class="line"></div>
+      <h3>Tech skills</h3>
+      <div class="item">
+        <p>HTML5/CSS3, JavaScript (ES5/6+, Asynchronous), Webpack, Bootstrap, React, Redux, Node.js, Typescript,
+          Sass/Less, MongoDB, Express, Pug, Python3, Git (GitLab, Github), VS Code, Vim (basics), Figma.</p>
+      </div>
+      <div class="line"></div>
+      <h3>Miscellaneous</h3>
+      <div class="item">
+        <p>Among all skills I want to highlight: googling information in obscure situations, touch typing (~100-110
+          WPM), critical thinking, code quality optimization, asking right questions and solving thing on my own
+          independetly.</p>
+      </div>
+      <div class="line"></div>
+      <h3>Code example</h3>
+      <div class="item">
+        <p>There is an array with information about payments:</p>
+      </div>
+      <pre>
+          <code class="language-whatever">
+  const payments = [
+  { createdAt: 1623456006400, sum: 300 },
+  { createdAt: 1602374400000, sum: 144 },
+  { createdAt: 1607731200320, sum: 300 },
+  { createdAt: 1602374400300, sum: 20 },
+  { createdAt: 1589155200000, sum: 10 },
+  { createdAt: 1589155200020, sum: 250 },
+  { createdAt: 1623456000000, sum: 170 },
+  { createdAt: 1589155200000, sum: 300 },
+  { createdAt: 1620691200100, sum: 40 },
+  { createdAt: 1607731200010, sum: 200 },
+  { createdAt: 1620691204100, sum: 15 },
+  { createdAt: 1620691254500, sum: 15 },
+  { createdAt: 1623456000400, sum: 37 },
+  { createdAt: 1623456006800, sum: 200 },
+  { createdAt: 1607731208320, sum: 400 },
+];
+          </code></pre>
+      <p><b>createdAt</b> - time of payment in timestamp format, <b>sum</b> - amount of payment.</p>
+      <br>
+      <p></p>
+      <p>You need to write a function which will receive an array of payments and return the three most profitable
+        days
+        in descending order in the form: “yyyyy-mm-dd”: N (“yyyyyy-mm-dd” is the date of payments, N is the sum of
+        payments for this date) (data structure for the result is at candidate’s discretion).</p>
+      <pre><code class="language-whatever">
+  let transformDatePayments = (arg) => arg.map(item => {
+    const container = {};
+
+    container.createdAt = newDate(item);
+    container.sum = item.sum;
+
+    return container;
+})
+
+function newDate(number) {
+    let date = new Date(parseInt(number.createdAt));
+    let formatYmd = date.toISOString().slice(0, 10);
+
+    return formatYmd;
+}
+
+function getThreeMostProfitableDays(data) {
+    if (typeof data === "undefined") {
+        throw new Error("Invoked without arguments.")
+    }
+    if (data.length < 1) return []
+
+    let arrayOfPayments = transformDatePayments(data);
+    let resMap = new Map();
+    let result = [];
+    arrayOfPayments.map((x) => {
+        if (!resMap.has(x.createdAt))
+            resMap.set(x.createdAt, x.sum);
+        else
+            resMap.set(x.createdAt, (x.sum + resMap.get(x.createdAt)));
+    })
+    resMap.forEach((value, key) => {
+        result.push({
+            [key]: value
+        })
+    })
+
+    result.sort((a, b) => b[Object.keys(b)[0]] - a[Object.keys(a)[0]]);
+
+    return result.slice(0, 3);
+}
+
+console.log(getThreeMostProfitableDays(payments));
+</code>
+</pre>
+      <div class="line"></div>
+      <h3>Languages</h3>
+      <div class="item">
+        <h4>Russian:</h4>
+        <p>Native</p>
+        <h4>English:</h4>
+        <p>Proficiency (C2)</p>
+      </div>
+    </main>
+
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+
+</html>
